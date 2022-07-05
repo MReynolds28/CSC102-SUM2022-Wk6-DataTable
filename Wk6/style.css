@@ -1,0 +1,10 @@
+body {
+    background-color: rebeccapurple;
+    color: white;
+}
+#blink {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    transition: 0.5s;
+}

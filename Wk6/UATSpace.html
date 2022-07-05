@@ -1,0 +1,204 @@
+<!--Html file for CSC102 Assignment #1:
+    Launching your UAT Space Program HTML Doc Tags
+    written by Matthew Reynolds
+    email: matreyno@uat.edu-->
+<!DOCTYPE html>
+<html>
+    <!--Head tag for assignment-->
+<head>
+   <title>
+    Matthew Reynold's UAT Space Page
+    <!--Ths is the title tag
+        as well as the title text-->
+       
+   </title>
+   <script>
+       //alert function required by assignment
+       var alertText = "This website is built different";
+       //alert(alertText);
+   </script>
+   <script src="code.js"></script>
+   <link href="style.css" rel="stylesheet" type="text/css">
+  <!-- This is the same command it is just linked into a
+     .css file seperatelyso it looks more clean-->
+   <!--<style>
+       body {
+           background-color: rebeccapurple;
+           color: white;
+       }
+   </style>-->
+</head>
+<!--This the body tag-->
+<body>
+    <table>
+        <td>    
+            <!--This is the logo-->
+            <img src="UATSpaceLogo-1.jpg">
+        </td>
+        <td>
+            <!--Header-->
+            <h1>Welcome to UATSpace</h1>
+        </td>
+    </table>
+    <br>
+    <br>
+    <table id="data" border="2" width="70%">
+        <col style="width: 35%">
+        <col style="width: 35%">
+        <thead>
+            <th>Data Type</th>
+            <th>Reading</th>
+        </thead>
+        <tbody>
+            <tr id="seconds">
+                <td>Time Elapsed</td>
+                <td>15 seconds</td>
+            </tr>
+            <tr id="latitude">
+                <td>Latitude</td>
+                <td>0</td>
+            </tr>
+            <tr id="longitude">
+                <td>Longitude</td>
+                <td>0</td>
+            </tr>
+            <tr id="gpsAltitude">
+                <td>GPS Altitude</td>
+                <td>0</td>
+            </tr>
+            <tr id="bmpAltitude">
+                <td>BMP Altitude</td>
+                <td>30383.04</td>
+            </tr>
+            <tr id="bmpPress">
+                <td>BMP Pressure</td>
+                <td>2.34</td>
+            </tr>
+            <tr id="bmpTemp">
+                <td>BMP Temperature</td>
+                <td>0</td>
+            </tr>
+            <tr id="digTemp">
+                <td>Digital Temperature</td>
+                <td>24.12</td>
+            </tr>
+            <tr id="cssTemp">
+                <td>CSS Temperature</td>
+                <td>25</td>
+            </tr>
+            <tr id="cssCO2">
+                <td>CSS eCO2</td>
+                <td>400</td>
+            </tr>
+            <tr id="cssTVOC">
+                <td>CSS TVOC</td>
+                <td>0</td>
+            </tr>
+            <tr id="UV">
+                <td>UV</td>
+                <td>0</td>
+            </tr>
+            <tr id="accelX">
+                <td>Acceleration X:</td>
+                <td>-0.87</td>
+            </tr>
+            <tr id="accelY">
+                <td>Acceleration Y:</td>
+                <td>-0.02</td>
+            </tr>
+            <tr id="accelZ">
+                <td>Acceleration Z:</td>
+                <td>9.61</td>
+            </tr>
+            <tr id="magneticX">
+                <td>Magnetic X:</td>
+                <td>0.13</td>
+            </tr>
+            <tr id="magneticY">
+                <td>Magnetic Y:</td>
+                <td>0.57</td>
+            </tr>
+            <tr id="magneticZ">
+                <td>Magnetic Z:</td>
+                <td>-0.24</td>
+            </tr>
+            <tr id="gyroX">
+                <td>Gyro X:</td>
+                <td>4.66</td>
+            </tr>
+            <tr id="gyroY">
+                <td>Gyro Y:</td>
+                <td>0.01</td>
+            </tr>
+            <tr id="gyroZ">
+                <td>Gyro Z:</td>
+                <td>-0.4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <!--Paragraph tag-->
+    <p>
+        Test for the paragraph tag.
+        Usually meant to be used in more than one line. 
+        But this is just a test of the paragraph tag.
+    </p>
+   
+   <script>
+        //one line comment on JavaScript
+        //textValue comment
+        var textValue = "Test of the document.write()";
+        //use of the  textValue comment I made
+        document.write(textValue);
+
+        /*multiline
+        comment*/
+    </script>
+   
+    <br>
+    <br>
+    <!--Both button requirements-->
+    <button id="startButton" onclick="start();">Start</button>
+    <button id="stopButton" onclick="stop();">Stop</button>
+    <br>
+    <br>
+    Time left before launch:<br>
+    <div id="countdownDisplay">Launch not intiated</div>
+    <br>
+    <br>
+    
+    <!--Title for Craps game-->
+    <h1 id="blink">Craps Game!!!</h1>
+    <script type="text/javascript">
+        var blink = document.getElementById('blink');
+        setInterval(function()  {
+            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+        }, 600);
+    </script>
+    <h2>Come play!</h2>
+    <!--Set up for the UI for playing craps on the page
+    as well as giving the dice ID's -->
+    Die 1 result: <div id="die1Res">Press Play Craps to roll dice</div><br>
+    Die 2 result: <div id="die2Res">Press Play Craps to roll dice</div><br>
+    <!--Assiging where to see the results of the actual craps game not just the dice rolls-->
+    <div id="crapsRes">GameResults</div>
+    <br>
+    <!--Creating the Play button-->
+    <button onclick="playCraps();">Play Craps</button>
+    <br>
+    <br>
+    <!--Creating a scoreboard (Extra part)-->
+    Wins<br>
+    <div id="winRes">Get some wins!</div><br>
+    Losses<br>
+    <div id="loseRes">Get some losses</div><br>
+    Tie<br>
+    <div id="tieRes">Get some ties</div><br>
+</body>
+</html>
+<!--The HTML Tag and everything is inside it besides DOC TYPE-->
+<!--Html comment-->
+<script>
+    //JavaScript comment
+</script>

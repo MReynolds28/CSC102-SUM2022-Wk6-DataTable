@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--Login page for UAT Space page
+created for Assignment: Mission Control Operator Login
+CSC102
+matreyno@uat.edu
+Assignment requirements: Inputs for User first and last name
+Check if string is <20 characters and give a warning – but do not continue the program if invalid
+Inputs for User badge number
+Check if badge number is valid and 3 digits– but do not continue the program if invalid-->
+<html>
+    <head>
+        <!--This is the script connecting our Java Script to this HTML 
+            file and linking the our css code for the background-->
+        <script src="loginCode.js"></script>
+        <link rel="stylesheet" href="loginStyle.css">
+        <title>
+            UATSpace Login Page
+        </title>
+    </head>
+   <!--Body of the page that users will see-->
+    <body>
+        <img src="UATspaceLogo-1.jpg" alt="">
+        <h1>Welcome to the UAT Space Login Page</h1>
+        <h2>Please login with your first and last names as well as your badge ID number</h2>
+        <!--Shows login status above the form-->
+        <div id="loginStatus">Login Status...</div><br>
+        <!--This is the code for the Form, that will actually 
+            pop up and allow users to type in their Credentials-->
+        <form id="creditSubmit" onsubmit="return false">
+            First Name: <input type="text" id="fName"/><br>
+            Last Name: <input type="text" id="lName"/><br>
+            Badge Number: <input type="number" id="BadgeID"/><br>
+            <br>
+            <!--this allows the information to be submitted-->
+            <input type="submit" onclick="checkCreds();" />
+        </form>
+    </body>
+</html>
